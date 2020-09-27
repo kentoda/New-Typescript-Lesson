@@ -43,3 +43,9 @@ const coffee = {
 }
 
 coffee.size = CoffeeSize.SHORT;
+
+// anyなんでも入れられる
+let anything: any = true;
+anything = 'hello',
+anything = 3333,
+anything = ['hoge', 'bananan', 'apple']
