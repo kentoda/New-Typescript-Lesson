@@ -22,5 +22,8 @@ const person = {
   age: 21
 }
 
+// array
 const fruits = ['apple', 'banana', 'grape']
 
+// tuple(配列の強化版)を宣言したい場合、型推論してくれないので、型注釈で明示的に宣言する必要がある
+const book: [string, number, boolean] = ['business', 1500, false];
