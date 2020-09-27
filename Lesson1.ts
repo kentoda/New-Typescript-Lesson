@@ -27,3 +27,19 @@ const fruits = ['apple', 'banana', 'grape']
 
 // tuple(配列の強化版)を宣言したい場合、型推論してくれないので、型注釈で明示的に宣言する必要がある
 const book: [string, number, boolean] = ['business', 1500, false];
+ 
+// enum 特定のまとまったグループのみを受け入れる
+enum CoffeeSize {
+  // =で値を代入しない場合、0,1...のような数字になる
+  SHORT = 'SHORT',
+  TALL = 'TALL',
+  GRANDE = 'GRANDE',
+  VENTI ='VENTI'
+}
+
+const coffee = {
+  hot: true,
+  size: CoffeeSize.TALL
+}
+
+coffee.size = CoffeeSize.SHORT;
