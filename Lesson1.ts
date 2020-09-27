@@ -21,3 +21,6 @@ const person = {
   },
   age: 21
 }
+
+const fruits = ['apple', 'banana', 'grape']
+
