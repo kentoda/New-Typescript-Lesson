@@ -49,3 +49,24 @@ let anything: any = true;
 anything = 'hello',
 anything = 3333,
 anything = ['hoge', 'bananan', 'apple']
+
+// union srtingもnumber入れたい時など
+let unionType: number | string  = 10;
+unionType = 'hello'
+unionType = 333
+
+//literal 決まった値のみしか入れられなくなる
+// constは最初からliteralと型推論する
+const apple: 'apple' = 'apple'
+
+// literalとunion型を組み合わせるとenumのような使用になる
+let clothSize:  'small' | 'medeum' | 'large' = 'small';
+
+// 実践的な使い方
+const cloth: {
+  size: 'small' | 'medeum' | 'large',
+  color: string
+} = {
+  size: 'large',
+  color: 'black'
+}
