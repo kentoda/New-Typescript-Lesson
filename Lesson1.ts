@@ -11,3 +11,13 @@ let single: string = 'hello';
 let double: string = "hello";
 let back: string = `hello`;
 
+const person = {
+//   name: string;
+//   age: number;
+// } = {
+  name: {
+    first: 'Jack',
+    last:   'oda',
+  },
+  age: 21
+}
