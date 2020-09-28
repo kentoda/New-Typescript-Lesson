@@ -70,3 +70,18 @@ const cloth: {
   size: 'large',
   color: 'black'
 }
+
+// alias型名をつけて　既存の型名はつけられない
+type clothSize = 'small' | 'medeum' | 'large'
+
+// 関数に型をつける
+// 戻り値に型を記述しなくても、型推論してくれるがつけた方が親切
+function add(num1: number, num2: number): number {
+  return num1 + num2
+}
+
+// 戻り値がない場合
+// void　何も返さない型
+function sayHello(): void {
+  console.log('hello');
+}
