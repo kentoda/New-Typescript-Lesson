@@ -83,5 +83,20 @@ function add(num1: number, num2: number): number {
 // 戻り値がない場合
 // void　何も返さない型
 function sayHello(): void {
-  console.log('hello');
+  // console.log('hello');
 }
+
+// 関数が保持する変数に型をつける
+const anotherAdd: (n1: number, n2: number) => number =  add;
+
+// アロー関数　複数の場合のみ引数に()をつける
+const doubleNumber: (num: number) => number = num => num* 2;
+
+// コールバック関数に型をつける
+function doubleAndHandle(num: number, cb: (num: number) => number): void {
+  const doubleNum = cb(num * 2);
+  console.log(doubleNum)
+}
+doubleAndHandle(21, doubleNum => {
+  return doubleNum
+});
