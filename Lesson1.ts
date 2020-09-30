@@ -100,3 +100,8 @@ function doubleAndHandle(num: number, cb: (num: number) => number): void {
 doubleAndHandle(21, doubleNum => {
   return doubleNum
 });
+
+// never型(決して何も返さない)
+function  error(message: string): never {
+  throw new Error(message);
+}
