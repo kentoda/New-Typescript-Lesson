@@ -1,4 +1,6 @@
-
-// tergetオプションで、コンパイルしたいjavascriptのバージョンにする。今回はES6
-class Car {
-}
+"use strict";
+var Car = /** @class */ (function () {
+    function Car() {
+    }
+    return Car;
+}());
